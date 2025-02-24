@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int n,digit,sum=0,orginal;
+    printf("enter number:");
+    scanf("%d",&n);
+     orginal =n;
+    while(n>0){
+        digit = n%10;
+        sum += digit*digit*digit;
+        n/=10;
+    }
+   
+    if( orginal == sum){
+        printf("armstrong");
+    }else{
+         printf("not armstrong");
+    }
+    return 0;
+}
